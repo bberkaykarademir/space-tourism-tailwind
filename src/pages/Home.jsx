@@ -1,56 +1,31 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div className="bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat h-screen w-full text-white py-14">
-      <header className="w-full h-28  flex justify-between items-center font-roboto">
-        <div className="ml-8 sm:ml-0 lg:ml-4 text-center sm:basis-0 md:basis-1/12 md:flex-shrink-0">
-          <img src="/public/assets/shared/logo.svg" className="mx-auto" />
+    <div className="bg-[url(/public/assets/home/background-home-tablet.jpg/)] md:bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat bg-center h-screen w-full text-white lg:py-14">
+      <Header />
+      <main className="h-full my-8">
+        <div className="w-full sm:w-3/4 lg:h-4/6 mx-auto text-center lg:text-start flex flex-col items-center lg:flex-row lg:items-end justify-between">
+          <div className=" max-w-[26rem]  text-[#D0D6F9] tracking-widest mt-10">
+            <span className="uppercase lg:text-2xl font-barlow ">
+              SO, YOU WANT TO TRAVEL TO
+            </span>
+            <h1 className="font-makasar text-white text-4xl lg:text-9xl my-6 lg:my-12">
+              SPACE
+            </h1>
+            <p className="tracking-wide font-open">
+              Let's face it: if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relaxe because we'll give you a truly out
+              of this world experience.
+            </p>
+          </div>
+          <button className="bg-white z-0  relative after:content-[''] after:bg-white after:opacity-25 after:rounded-full after:block after:absolute hover:after:w-48 lg:hover:after:w-72 hover:after:h-48 lg:hover:after:h-72 after:inset-y-1/2 after:-translate-y-1/2 after:inset-x-1/2 after:-translate-x-1/2   font-makasar text-black text-opacity-80 text-3xl w-36 lg:w-64 h-36 lg:h-64 rounded-full mt-4">
+            EXPLORE
+          </button>
         </div>
-        <div className=" md:basis-2/12 md:-mr-12  lg:-mr-28 lg:basis-3/12 z-20  h-[1px] opacity-50 bg-white"></div>
-        <div className="sm:hidden cursor-pointer p-2 z-10">
-          <div className="mr-8 h-1 w-8 relative bg-white before:content-[''] before:h-1 before:absolute before:bottom-2 before:w-8 before:bg-white after:content-[''] after:h-1 after:absolute after:top-2 after:w-8 after:bg-white"></div>
-        </div>
-        <nav className="absolute top-0 right-0 w-[80%] min-h-[100%] sm:relative bg-gray-500 bg-opacity-50 backdrop-blur-xl sm:bg-opacity-100 sm:backdrop-blur-none  sm:visible sm:pl-6 md:pl-10 lg:pl-48 sm:pr-6 sm:w-full md:basis-8/12 sm:h-full sm:flex sm:items-center sm:bg-gradient-to-r from-[#131522] via-[#55637d] to-[#112a50]">
-          <ul className="mt-48 ml-20 sm:mt-0 sm:flex uppercase sm:mx-auto">
-            <li className="mb-6 sm:mb-0">
-              <a
-                href="#"
-                className="tracking-widest text-sm border-b-4 border-white pb-1  sm:pb-10"
-              >
-                <span className="mr-3 font-semibold tracking-normal text-base">
-                  00
-                </span>
-                Home
-              </a>
-            </li>
-            <li className="mb-6 sm:mb-0 sm:ml-10 md:ml-20">
-              <a href="#" className="tracking-widest text-sm">
-                <span className="mr-3 font-semibold tracking-normal text-base">
-                  01
-                </span>
-                Destination
-              </a>
-            </li>
-            <li className="mb-6 sm:mb-0 sm:ml-10  md:ml-20">
-              <a href="#" className="tracking-widest text-sm">
-                <span className="mr-3 font-semibold tracking-normal text-base">
-                  02
-                </span>
-                Crew
-              </a>
-            </li>
-            <li className="sm:ml-10  md:ml-20">
-              <a href="#" className="tracking-widest text-sm">
-                <span className="mr-3 font-semibold tracking-normal text-base">
-                  03
-                </span>
-                Technology
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      </main>
     </div>
   );
 };
