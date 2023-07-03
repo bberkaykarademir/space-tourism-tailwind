@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div className="bg-[url(/public/assets/home/background-home-tablet.jpg/)] md:bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat bg-center h-screen w-full text-white lg:py-14">
+    <div className="overflow-hidden bg-[url(/public/assets/home/background-home-tablet.jpg/)] md:bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat bg-center h-screen w-full text-white lg:py-14">
       <Header />
       <main className="h-full my-8">
         <div className="w-full sm:w-3/4 lg:h-4/6 mx-auto text-center lg:text-start flex flex-col items-center lg:flex-row lg:items-end justify-between">
