@@ -3,7 +3,7 @@ import React from "react";
 const Member = () => {
   return (
     <div className=" lg:p-0 p-10 h-3/4  flex flex-col md:flex-row  justify-between items-center">
-      <div className="relative h-full flex flex-col  items-center">
+      <div className="relative h-full flex flex-col  items-center justify-center">
         <div className="max-w-[35rem] mb-8 md:mb-36 text-center md:text-left">
           <span className="uppercase lg:text-2xl font-barlow opacity-60 ">
             COMMANDER

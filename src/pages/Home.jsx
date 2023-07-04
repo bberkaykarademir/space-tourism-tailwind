@@ -3,18 +3,18 @@ import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div className="overflow-hidden bg-[url(/public/assets/home/background-home-tablet.jpg/)] md:bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat bg-center h-screen w-full text-white lg:py-14">
+    <div className="md:flex md:flex-col bg-[url(/public/assets/home/background-home-tablet.jpg/)] md:bg-[url(/public/assets/home/background-home-desktop.jpg/)] bg-cover bg-no-repeat bg-center  min-h-screen w-full text-white lg:py-14">
       <Header />
-      <main className="h-full my-8">
-        <div className="w-full sm:w-3/4 lg:h-4/6 mx-auto text-center lg:text-start flex flex-col items-center lg:flex-row lg:items-end justify-between">
-          <div className=" max-w-[26rem]  text-[#D0D6F9] tracking-widest mt-10">
-            <span className="uppercase lg:text-2xl font-barlow ">
+      <main className="h-full my-auto flex flex-col ">
+        <div className="w-full max-h-full sm:w-3/4 lg:h-4/6 my-auto lg:my-0 mx-auto text-center lg:text-start flex flex-col items-center lg:flex-row lg:items-end justify-between">
+          <div className=" max-w-[26rem] max-h-full  text-[#D0D6F9] tracking-widest mt-10">
+            <span className="uppercase md:text-2xl font-barlow ">
               SO, YOU WANT TO TRAVEL TO
             </span>
-            <h1 className="font-makasar text-white text-4xl lg:text-9xl my-6 lg:my-12">
+            <h1 className="font-makasar text-white text-4xl md:text-9xl my-6 lg:my-12">
               SPACE
             </h1>
-            <p className="tracking-wide font-open">
+            <p className="tracking-wide font-open md:text-2xl lg:text-lg">
               Let's face it: if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relaxe because we'll give you a truly out
