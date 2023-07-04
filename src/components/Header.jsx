@@ -10,7 +10,7 @@ const Header = () => {
       <div className="sm:hidden cursor-pointer p-2 z-20">
         <div className="mr-8 h-1 w-8 relative bg-white before:content-[''] before:h-1 before:absolute before:bottom-2 before:w-8 before:bg-white after:content-[''] after:h-1 after:absolute after:top-2 after:w-8 after:bg-white"></div>
       </div>
-      <nav className="absolute z-10 top-0 right-0 w-[80%] min-h-[100%] sm:relative bg-gray-500 bg-opacity-50 backdrop-blur-xl sm:bg-opacity-100 sm:backdrop-blur-none  sm:visible sm:pl-6 md:pl-10 lg:pl-48 sm:pr-6 sm:w-full md:basis-8/12 sm:h-full sm:flex sm:items-center sm:bg-gradient-to-r from-[#131522] via-[#55637d] to-[#112a50]">
+      <nav className=" fixed z-10 top-0 right-0 w-[80%] h-full sm:relative bg-gray-500 bg-opacity-50 backdrop-blur-xl sm:bg-opacity-100 sm:backdrop-blur-none  sm:visible sm:pl-6 md:pl-10 lg:pl-48 sm:pr-6 sm:w-full md:basis-8/12 sm:h-full sm:flex sm:items-center sm:bg-gradient-to-r from-[#131522] via-[#55637d] to-[#112a50]">
         <ul className="mt-48 ml-20 sm:mt-0 sm:flex uppercase sm:mx-auto">
           <li className="mb-6 sm:mb-0">
             <a
