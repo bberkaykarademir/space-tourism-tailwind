@@ -2,7 +2,10 @@ import React from "react";
 import Header from "../components/Header";
 import Destination from "../components/Destination";
 
+
+
 const Destinations = () => {
+  
   return (
     <div className=" overflow-hidden bg-[url(/public/assets/destination/background-destination-tablet.jpg/)] md:bg-[url(/public/assets/destination/background-destination-desktop.jpg/)] bg-cover bg-no-repeat bg-center h-screen sm:h-screen w-full text-white  lg:p-14">
       <Header />

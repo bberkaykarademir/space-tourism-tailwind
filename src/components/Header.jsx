@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const [activePage, setActivePage] = useState("home");
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    if (currentPath === "/") {
+      setActivePage("home");
+    } else if (currentPath === "/destination") {
+      setActivePage("destination");
+    } else if (currentPath === "/crew") {
+      setActivePage("crew");
+    } else if (currentPath === "/technology") {
+      setActivePage("technology");
+    }
+  }, [location.pathname]);
   return (
     <header className="w-full sm:h-28 text-white  flex justify-between items-center font-barlow">
       <div className="ml-8 sm:ml-0 lg:ml-4 text-center sm:basis-0 md:basis-1/12 md:flex-shrink-0">
@@ -12,40 +28,57 @@ const Header = () => {
       </div>
       <nav className=" fixed z-10 top-0 right-0 w-[80%] h-full sm:relative bg-gray-500 bg-opacity-50 backdrop-blur-xl sm:bg-opacity-100 sm:backdrop-blur-none  sm:visible sm:pl-6 md:pl-10 lg:pl-48 sm:pr-6 sm:w-full md:basis-8/12 sm:h-full sm:flex sm:items-center sm:bg-gradient-to-r from-[#131522] via-[#55637d] to-[#112a50]">
         <ul className="mt-48 ml-20 sm:mt-0 sm:flex uppercase sm:mx-auto">
-          <li className="mb-6 sm:mb-0">
-            <a
-              href="#"
-              className="tracking-widest text-sm border-b-4 border-white pb-1  sm:pb-10"
+          <li className="mb-6 sm:mb-0 ">
+            <NavLink
+              to="/"
+              className={`tracking-widest text-sm pb-1 sm:pb-10 ${
+                activePage === "home" ? "border-b-4 border-white" : ""
+              }`}
             >
               <span className="mr-3 font-semibold tracking-normal text-base">
                 00
               </span>
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="mb-6 sm:mb-0 sm:ml-10 md:ml-20">
-            <a href="#" className="tracking-widest text-sm">
+            <NavLink
+              to="/destination"
+              className={`tracking-widest text-sm pb-1 sm:pb-10 ${
+                activePage === "destination" ? "border-b-4 border-white" : ""
+              }`}
+            >
               <span className="mr-3 font-semibold tracking-normal text-base">
                 01
               </span>
               Destination
-            </a>
+            </NavLink>
           </li>
           <li className="mb-6 sm:mb-0 sm:ml-10  md:ml-20">
-            <a href="#" className="tracking-widest text-sm">
+            <NavLink
+              to="/crew"
+              className={`tracking-widest text-sm pb-1 sm:pb-10 ${
+                activePage === "crew" ? "border-b-4 border-white" : ""
+              }`}
+            >
               <span className="mr-3 font-semibold tracking-normal text-base">
                 02
               </span>
               Crew
-            </a>
+            </NavLink>
           </li>
           <li className="sm:ml-10  md:ml-20">
-            <a href="#" className="tracking-widest text-sm">
+            <NavLink
+              to="/technology"
+              className={`tracking-widest text-sm pb-1 sm:pb-10 ${
+                activePage === "technology" ? "border-b-4 border-white" : ""
+              }`}
+            >
               <span className="mr-3 font-semibold tracking-normal text-base">
                 03
               </span>
               Technology
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

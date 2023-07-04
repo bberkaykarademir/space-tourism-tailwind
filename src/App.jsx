@@ -7,10 +7,10 @@ import Technology from "./pages/Technology";
 export default function App() {
   return (
     <Routes>
-      <Route path="/a" element={<Home />}></Route>
-      <Route path="/b" element={<Destinations />}></Route>
-      <Route path="/c" element={<Crew />}></Route>
-      <Route path="/" element={<Technology />}></Route>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/destination" element={<Destinations />}></Route>
+      <Route path="/crew" element={<Crew />}></Route>
+      <Route path="/technology" element={<Technology />}></Route>
     </Routes>
   );
 }
