@@ -11,7 +11,7 @@ const Member = () => {
           <span className="uppercase lg:text-2xl font-barlow opacity-60 ">
             {role}
           </span>
-          <h3 className="font-makasar  text-white text-5xl my-6 uppercase">
+          <h3 className="font-makasar  text-white text-3xl md:text-5xl my-6 uppercase">
             {name}
           </h3>
           <p className="tracking-wide leading-7 mt-12 font-open w-3/4  text-center md:text-left mx-auto md:mx-0 text-[#D0D6F9]">

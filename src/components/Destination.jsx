@@ -76,7 +76,7 @@ const Destination = () => {
             {name}
           </h3>
           <p className="max-w-lg text-[#D0D6F9] leading-7">{description}</p>
-          <div className="flex mt-5 sm:mt-0 -mb-6">
+          <div className="flex ">
             <div className="flex flex-col basis-1/2">
               <h4 className="text-[#D0D6F9] text-sm">AVG. DISTANCE</h4>
               <span className="text-base sm:text-2xl">225 MIL. KM</span>
