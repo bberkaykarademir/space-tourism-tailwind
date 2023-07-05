@@ -4,14 +4,16 @@ const Destination = () => {
   const [destinationId, setDestinationId] = useState(0);
   const { name, images, description, distance, travel } =
     data.destinations[destinationId];
+    const image=images.png
+    console.log(image)
+    // url("../assets/destination/image-moon-fixed.png")
   return (
-    <div className="w-full h-full flex flex-col md:flex-row">
-      <div className="md:basis-1/2 mt-8 md:mt-0 flex justify-center items-center lg:items-end max-h-full ">
-        <img
-          src={images.png}
-          alt="planet"
-          className="w-60 h-60 md:w-auto md:h-auto"
-        />
+    <div className="w-full h-full flex flex-col  md:flex-row">
+      <div className=" md:basis-1/2 mt-8 md:mt-0 flex justify-center items-center lg:items-end max-h-full ">
+        <div
+        style={{ backgroundImage: `url(${image})` }}
+          className={`transform-style-3d z-100 rounded-full self-center  h-[300px] w-[300px] bg-cover  bg-repeat-x animate-[rotate_30s_linear_infinite]`}
+        ></div>
       </div>
       <div className="p-4  flex  basis-1/2">
         <div className="w-full lg:h-5/6 my-auto  flex flex-col justify-between">

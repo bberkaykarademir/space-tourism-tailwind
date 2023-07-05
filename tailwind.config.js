@@ -11,7 +11,15 @@ export default {
         makasar: ["Noto Serif Makasar", "serif"],
         open: ["Open Sans", "sans-serif"],
       },
+      keyframes: {
+        rotate: {
+          '0%': { backgroundPositionX: 0, backgroundPositionY: 0 },
+          '100%': { backgroundPositionX: -1200, backgroundPositionY: 0 },
+        }
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-3d'),
+  ],
 };
